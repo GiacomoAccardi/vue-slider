@@ -1,7 +1,10 @@
-CreateApp({
+const {createApp} = Vue;
+
+createApp ({
     data() {
         return {
-            images : [
+            active_image: 0,
+            slides : [
                 {
                     image: 'img/01.webp',
                         title: 'Marvel\'s Spiderman Miles Morale',
@@ -27,6 +30,5 @@ CreateApp({
         }
     },
     methods: {
-
     }
 }).mount('#app');
