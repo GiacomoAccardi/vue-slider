@@ -30,5 +30,19 @@ createApp ({
         }
     },
     methods: {
+        next() {
+            if (this.active_image == this.slides.length - 1){
+                this.active_image = 0;
+            } else{
+                this.active_image++;
+            }  
+        },
+        prev(){
+            if (this.active_image == 0){
+                this.active_image = this.slides.length - 1;
+            } else{
+                this.active_image--;
+            } 
+        }
     }
 }).mount('#app');
